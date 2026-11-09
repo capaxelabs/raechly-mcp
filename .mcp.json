@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "raechly": {
+      "type": "http",
+      "url": "https://mcp.raechly.com/mcp"
+    }
+  }
+}

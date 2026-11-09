@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.raechly/mcp",
+  "title": "Raechly",
+  "description": "Run cold email from your agent: mailboxes, warmup, campaigns, contacts, replies and deals.",
+  "websiteUrl": "https://www.raechly.com",
+  "version": "3.0.0",
+  "icons": [
+    {
+      "src": "https://www.raechly.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://www.raechly.com/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.raechly.com/mcp"
+    }
+  ]
+}
