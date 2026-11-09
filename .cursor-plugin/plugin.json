@@ -1,0 +1,32 @@
+{
+  "name": "raechly",
+  "displayName": "Raechly",
+  "version": "1.0.0",
+  "description": "Run cold email from your agent: mailboxes, warmup, lead search, campaigns, replies and deals.",
+  "author": {
+    "name": "Capaxe Labs"
+  },
+  "publisher": "Capaxe Labs",
+  "homepage": "https://www.raechly.com",
+  "repository": "https://github.com/capaxelabs/raechly-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "mcp",
+    "cold-email",
+    "outbound",
+    "email-warmup",
+    "lead-generation",
+    "sales",
+    "crm",
+    "deliverability"
+  ],
+  "category": "integrations",
+  "tags": [
+    "sales",
+    "email",
+    "outbound",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

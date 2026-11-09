@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "raechly",
+  "version": "1.0.0",
+  "description": "Run cold email from your agent: mailboxes, warmup, lead search, campaigns, replies and deals.",
+  "author": {
+    "name": "Capaxe Labs",
+    "url": "https://www.raechly.com"
+  },
+  "homepage": "https://www.raechly.com/mcp",
+  "repository": "https://github.com/capaxelabs/raechly-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "cold-email",
+    "outbound",
+    "email-warmup",
+    "lead-generation",
+    "sales",
+    "crm",
+    "deliverability"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Raechly",
+        "shortDescription": "Cold email from your agent",
+        "longDescription": "Run outbound by asking. Set up sending domains and mailboxes, warm them up, find leads, write and review campaigns, then handle replies and track deals.",
+        "developerName": "Capaxe Labs",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.raechly.com",
+        "privacyPolicyURL": "https://www.raechly.com/privacy",
+        "termsOfServiceURL": "https://www.raechly.com/terms",
+        "supportURL": "mailto:support@raechly.com",
+        "defaultPrompt": [
+          "Set up 2 warmed mailboxes for cold email",
+          "Find 200 heads of finance at US SaaS companies",
+          "Show today's replies and draft answers to the interested ones"
+        ],
+        "brandColor": "#F9CB1C",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  }
+}

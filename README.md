@@ -11,9 +11,14 @@
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=com.raechly">MCP Registry</a>
 </p>
 
+<p align="center">
+  <a href="https://cursor.com/en/install-mcp?name=raechly&config=eyJ1cmwiOiJodHRwczovL21jcC5yYWVjaGx5LmNvbS9tY3AifQ=="><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add Raechly to Cursor" height="32"></a>
+  <a href="https://vscode.dev/redirect/mcp/install?name=raechly&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.raechly.com%2Fmcp%22%7D"><img src="https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install Raechly in VS Code" height="32"></a>
+</p>
+
 Raechly is a hosted MCP server at `https://mcp.raechly.com/mcp`. Connect it to Claude, ChatGPT, Cursor or any MCP client and run outbound by asking: set up sending domains, warm mailboxes, find leads, write the sequence and handle replies.
 
-This repo holds the install files for Claude Code, Cursor and other clients. The server itself is hosted by Raechly, so there is nothing to run.
+This repo holds the install files for Claude Code, Codex, Cursor and other clients. The server itself is hosted by Raechly, so there is nothing to run.
 
 ## What you can ask
 
@@ -52,9 +57,22 @@ claude mcp add --transport http raechly https://mcp.raechly.com/mcp
 2. In **Apps & Connectors**, select **Create**.
 3. Name it **Raechly**, paste `https://mcp.raechly.com/mcp` and choose **OAuth**.
 
+### Codex
+
+```bash
+codex plugin marketplace add capaxelabs/plugins
+codex plugin add raechly@capaxe
+```
+
+Or add it as a plain MCP server:
+
+```bash
+codex mcp add raechly --url https://mcp.raechly.com/mcp
+```
+
 ### Cursor
 
-Add to `~/.cursor/mcp.json`:
+Use the **Add to Cursor** button above, or add to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -66,7 +84,7 @@ Add to `~/.cursor/mcp.json`:
 
 ### VS Code
 
-Add to `.vscode/mcp.json`:
+Use the **Install** button above, or add to `.vscode/mcp.json`:
 
 ```json
 {
@@ -110,6 +128,16 @@ Tools that send email or change data are marked as such, so your AI app asks bef
 - Privacy: https://www.raechly.com/privacy
 - Terms: https://www.raechly.com/terms
 - Support: support@raechly.com
+
+## Files in this repo
+
+| File | Read by |
+| --- | --- |
+| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code |
+| `plugin.json`, `mcp.json` | Codex and other [Agent Plugins](https://agent-plugins.org) clients |
+| `.cursor-plugin/plugin.json` | Cursor |
+| `server.json` | [Official MCP Registry](https://registry.modelcontextprotocol.io) |
+| `glama.json` | [Glama](https://glama.ai/mcp/servers) |
 
 ## License
 

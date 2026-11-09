@@ -10,7 +10,16 @@
   "homepage": "https://www.raechly.com/mcp",
   "repository": "https://github.com/capaxelabs/raechly-mcp",
   "license": "MIT",
-  "keywords": ["mcp", "cold-email", "outbound", "email-warmup", "lead-generation", "sales", "crm", "deliverability"],
+  "keywords": [
+    "mcp",
+    "cold-email",
+    "outbound",
+    "email-warmup",
+    "lead-generation",
+    "sales",
+    "crm",
+    "deliverability"
+  ],
   "icon": "./assets/logo.svg",
   "documentationUrl": "https://www.raechly.com/mcp",
   "supportUrl": "mailto:support@raechly.com",
